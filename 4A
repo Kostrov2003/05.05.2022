@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main
+
+{
+	public static void main(String[] args) {
+	    
+	    Scanner scanner = new Scanner(System.in); 
+	    
+	    System.out.println("Введите вес арбуза (целое число) в кг");
+	    
+	    
+	    int watermelon = scanner.nextInt();
+	    
+	    if (watermelon % 2 == 0){
+	        System.out.println("YES");
+	    }
+	    else {
+	        System.out.println("NO");
+	    }
+    //Можно сделать так, что и арбуз весом 9 кг тоже будет пополам по 4.5 кг, но по условию берутся целые числа, и должно быть две чётные половинки.
+    //Реализация была бы через сравнения чисел и проверки на чётность, по сути 4.5 если само целое число, оно чётное, а половинка ну есть половинка =))))
+    // Не знаю, я уже на 1 задаче в дебри полез
+
+	}
+}
+1
