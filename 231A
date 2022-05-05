@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner scanner = new Scanner(System.in);
+	    
+	    System.out.println("кол-во задач");
+	    int n = scanner.nextInt();
+	    int answer = 0;
+	    
+	    for(int i = 0; i <n; i++) {
+	        
+	      
+	      int a = scanner.nextInt();
+        
+	      int b = scanner.nextInt();
+	       
+	      int c = scanner.nextInt();
+ 
+        scanner.nextLine();
+	        
+	        
+	      if (a + b + c >= 2) {
+	          answer += 1;
+	      }
+	      else {
+	          answer += 0;
+	      }
+	      
+	    }
+      System.out.println("можно решить");
+	    System.out.println(answer);
+      
+    
+	    
+	  
+		
+	}
+}
