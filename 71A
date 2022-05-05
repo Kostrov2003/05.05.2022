@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main
+
+{
+	public static void main(String[] args) {
+	  Scanner scanner = new Scanner(System.in); 
+	  
+	    
+	  System.out.println("Введите колво строк");
+	  int n = scanner.nextInt();
+	  String line = "";
+	  
+	    
+	  for(int i = 0; i <= n; i++) {
+	      
+	      String word = scanner.nextLine();
+	      int len = word.length();
+        int last_len = len - 2;
+	        
+	      if(len >= 10) {
+	        
+	        
+	        int last = len - 1;
+	        line += word.charAt(0) + "" + last_len + "" + word.charAt(last) + " ";
+	        
+	            }
+	        else {
+	            
+	            line = word + " ";
+	        }
+	    }
+	    System.out.println(line);
+	    
+	}
+}
+// правда он выводит в строчку, а как выводить в столбик, я не додумался,
+// можно было сделать, чтобы он сразу в цикле выводил, после введённого готовый результ., но я хотел чтобы он принимал сначала все значения, а потом уже выводил итог = все строки .
