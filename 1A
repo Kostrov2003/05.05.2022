@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	  Scanner scanner = new Scanner(System.in);
+
+    long left = 0;
+    long under = 0;
+     
+	  long m = scanner.nextInt();
+	  long n = scanner.nextInt();
+    long a = scanner.nextInt();
+    scanner.nextLine();
+
+      if (m % a > 0) {
+        left = m / a;
+        left += 1;
+      }
+      else {
+        left = m / a;
+      }
+
+      if (n % a > 0) {
+        under = n / a;
+        under += 1;
+      }
+      else {
+        under = n / a;
+      }
+	    
+	  System.out.println(left * under);
+	}
+}
